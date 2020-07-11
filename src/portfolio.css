@@ -1,8 +1,6 @@
 
 /* 8X8 Grid */
-.container{
-color:green
-}
+
 .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);  
