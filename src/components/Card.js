@@ -7,7 +7,7 @@ export default class Card extends Component {
                     <div>
                         <h1 className="title"> <b> {this.props.name + " " + this.props.lastName} </b></h1>
                     </div>
-                    <h6 className="subtitle">{this.props.proffesion}</h6>
+                    <h6 className="subtitle">{this.props.profession}</h6>
                     <div>
                         <div>
                             <a href="/Portfolio" >

@@ -15,7 +15,7 @@ export default class Index extends Component {
                 <Route path="/" exact component={Split} >
                     <Split>
                         <Leftside >
-                            <Card name="NATALIA" lastName="MUÑIZ" proffesion="Graphic Designer" />
+                            <Card name="NATALIA" lastName="MUÑIZ" profession="Graphic Designer" />
                         </Leftside>
                         <Rightside />
                     </Split>
