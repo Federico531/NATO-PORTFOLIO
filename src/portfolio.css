@@ -26,13 +26,11 @@ img{
     background-size: 100%;
     display: grid;
 }
+
 /* TEST 2 HOVER OVER IMG  */
 
-.contenedor {
-  position: relative;
-}
 
-.image {
+/* .image {
   opacity: 1;
   display: block;
   transition: .5s ease;
@@ -63,4 +61,4 @@ img{
   color: white;
   font-size: 16px;
   padding: 16px 32px;
-}
+} */
