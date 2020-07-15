@@ -1,0 +1,92 @@
+.containera{
+  background: url("https://mir-cdn.behance.net/v1/assets//1501ab05bb225341f2990946d5a6b18f/456e4149-1905-414c-abd0-5cab930dc27a_rwc_1171x0x10988x1708x13333.jpg?h=bbe01f3739f8da695c460bc2c2b6b76c");
+  background-size: 100% 190px ;
+  background-color:#f6f8f9;
+  background-repeat: no-repeat;  
+  margin-top: -10px
+}
+
+.gallery1{
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    grid-template-columns: 25% 27% 27% 27%;
+    grid-template-rows: repeat(3, 15vw); 
+    text-align: center;
+    max-width: 83%;
+    grid-row-gap: 35px;
+    grid-column-gap: 17px;
+}
+.name1{
+    padding-top: 50px;
+    position: center;
+    font-size: 25px;
+    color:black;
+    font-family: bold;
+}
+.sidebar1{
+    margin-top: 70px;
+    margin-left: 0px;
+    width:290px;
+    grid-row: 1/10;
+    background: white ;
+    box-shadow: 0.5px 0.5px 2px lightgray;
+    /* box-shadow: 20px 20px 50px 10px pink; */
+    
+}
+.contenedor {
+  position: relative;
+  top: 220px;
+  left: 35px;
+  height: 110%
+  }
+  .img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  /* TExT 1 HOVER OVER IMG AND OPACITY  */
+/* .image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50% ;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contenedor:hover .image {
+  opacity: 0.3;
+}
+
+.contenedor:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+} */
+
+
