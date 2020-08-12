@@ -20,6 +20,19 @@ img -> onclick =  modal.style.display = "flex"
                 modal.style.display = "block";   //podria meter este estilo e una funcion
             }
 
+
+BOCETO DE LO QUE HARIA CON UN IF PARA CAMBIAR UN ESTADO
+                    if (this.state.abierto) {
+            modalStyle = {
+                display: "flex",
+                maxWidth: '80%'
+            }else{
+                modalStyle={
+                    display: 'none'
+                }
+            }
+        }
+
 ------------------------------------------------------------
 
 function cerrar (span es la x)
