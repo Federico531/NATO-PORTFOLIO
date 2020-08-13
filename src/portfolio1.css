@@ -296,14 +296,12 @@
 
 .principal{
   justify-content: center;
-  overflow-y: hidden;
   height: 100%;
   width: 100%;
 }
 
 .secundario {
   margin: 0 auto;
-  background-color: green;
 }
 
 /* esto evita el overflow que mueve el fondo del modal PERO genera doble scroll */

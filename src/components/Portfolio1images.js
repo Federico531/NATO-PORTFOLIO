@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import Modaltest from './Modal/Modaltest'
 
+//PARA PONER CADA MODAL EN UN CAROUSEL
+//https://react-bootstrap.github.io/components/carousel/
+
 export default class Portfolio1Image extends Component {
     render() {
         return (
