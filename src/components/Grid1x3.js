@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react'
-import Modalscratch from './Modal/Modalscratch'
 
 //COMPONENTS
 import Portfolio1Image from './Portfolio1images'
@@ -50,7 +49,6 @@ export default class Grid1x3 extends Component {
 
         </Sidebar>
         <div className="gallery1">
-          <Modalscratch></Modalscratch>
           <Portfolio1Image id="img1position" img_text="HOLA" url="https://pro2-bar-s3-cdn-cf2.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/31a78818-ad19-4097-bb06-bc354ef26cf2_rw_1920.jpg?h=fc61aa3d02836cd5688b97e4c6bed830" />
           <Portfolio1Image id="img2position" img_text="COMO VA" url="https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/04ca4e50-7e71-431a-8141-055aea56bdaf_rw_600.jpg?h=c1df49ec10fed217376249d37f6b0de6" />
           <Portfolio1Image id="img3position" img_text="Bien " url="https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/78203b70-caf8-47fd-a338-67e7739dfbec_rw_600.jpg?h=c3467b4db2fa6ea87f1cae73cd7ff8ed" />
@@ -87,7 +85,9 @@ export default class Grid1x3 extends Component {
           <Portfolio1Image id="img6position" img_text="I DONT CARE" url="https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/af5611f0-1bc7-4932-a392-f6e97358c272_rw_1920.jpg?h=9f9c52b429985d26e9376cd31f7d6b08" />
           {/* {rows} */}
         </div>
+        
       </div>
+      
     )
   }
 }
