@@ -27,8 +27,12 @@ export default class Modalpopup extends React.Component {
             <>
                 <div className="principal">
                     
-                    <img onClick={this.abrirModal} style={{width:'100%', objectFit:"cover"}} src={this.props.url}/>
-               
+                    <img className="image" onClick={this.abrirModal} style={{width:'100%', objectFit:"cover"}} src={this.props.url}/>
+                    <div className="middle">
+                        <div className="text">
+                            {this.props.img_text}
+                        </div>
+                        </div>
                 </div>
                 <div className="secundario"></div>
                 <Modal isOpen={this.state.abierto} style={modalStyles}>  {/*Estado que valida si se abre o se cierra el modal */}
