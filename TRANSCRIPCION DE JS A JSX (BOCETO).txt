@@ -1,0 +1,58 @@
+TO DO
+
+ESTOS SON LOS "REF" QUE ESTARIAMOS USANDO, PERO DE PREFERENCIA PREFIERO USAR STATE Y FUNCIONES 
+
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myImg");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+function  abrir
+
+img -> onclick =  modal.style.display = "flex"
+
+
+
+            btn.onclick = function () {
+                modal.style.display = "block";   //podria meter este estilo e una funcion
+            }
+
+
+BOCETO DE LO QUE HARIA CON UN IF PARA CAMBIAR UN ESTADO
+                    if (this.state.abierto) {
+            modalStyle = {
+                display: "flex",
+                maxWidth: '80%'
+            }else{
+                modalStyle={
+                    display: 'none'
+                }
+            }
+        }
+
+------------------------------------------------------------
+
+function cerrar (span es la x)
+ 
+span -> onclick = modal.style.display = "none"
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+
+------------------------------------------------------------
+
+function cerrar (desde la ventana)
+
+windows.onclick = modal.style.display = "none"
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
