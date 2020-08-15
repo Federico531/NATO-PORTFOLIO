@@ -60,14 +60,16 @@ const Example = (props) => {
       <CarouselItem
         className="custom-tag"
         tag="div"
-        key={item.src}
+        key={item.key}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >
-              <img src={item.src} alt={item.altText} />
+              <img src={props.foto} alt={item.altText}/>
 
         <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
+
+      
     );
   });
 

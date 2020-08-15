@@ -10,7 +10,7 @@ export default class Portfolio1Image extends Component {
         return (
             <div className="contenedor">
                 <Modalexample className='image' url={this.props.url} id={this.props.id}>
-                    <Carousel>
+                    <Carousel foto={this.props.url}>
 
                     </Carousel>
                 </Modalexample>
