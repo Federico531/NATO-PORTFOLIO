@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import fotos1 from '../data/fotos1'
 import {
   Carousel,
   CarouselItem,
@@ -40,13 +40,13 @@ const Example = (props) => {
 
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === fotos1.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   }
 
   const previous = () => {
     if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    const nextIndex = activeIndex === 0 ? fotos1.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   }
 
@@ -55,12 +55,12 @@ const Example = (props) => {
     setActiveIndex(newIndex);
   }
 
-  const slides = items.map((item) => {
+  const slides = fotos1.map((item) => {
     return (
       <CarouselItem
         className="custom-tag"
         tag="div"
-        key={item}
+        key={item.id}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >
@@ -90,7 +90,7 @@ const Example = (props) => {
         previous={previous}
       >
 
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        <CarouselIndicators items={fotos1} activeIndex={activeIndex} onClickHandler={goToIndex} />
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
