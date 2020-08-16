@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import {
   Carousel,
   CarouselItem,
@@ -10,7 +11,6 @@ import {
 const items = [
   {
     id: 1,
-    src: 'https://pro2-bar-s3-cdn-cf2.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/31a78818-ad19-4097-bb06-bc354ef26cf2_rw_1920.jpg?h=fc61aa3d02836cd5688b97e4c6bed830',
     // altText: 'Slide hola',
     // caption: 'Slide 1'
   },
@@ -60,12 +60,12 @@ const Example = (props) => {
       <CarouselItem
         className="custom-tag"
         tag="div"
-        key={item.key}
+        key={item}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >
-              <img src={props.foto} alt={item.altText}/>
-
+              {/* <img src={props.foto} alt={item.altText}/> */}
+              <img src={props.foto} alt={item.altText} />
         <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
 
