@@ -10,7 +10,8 @@ export default class Grid1x3 extends Component {
 
     const fotolist = fotos1.map(foto => {
       return (
-        <Portfolio1Image url={foto.url} key={foto.id}/>
+        <Portfolio1Image url={foto.url} id={foto.id}/>
+      
       )
     })
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import fotos1 from '../data/fotos1'
+import fotos2 from '../data/fotos2'
 import {
   Carousel,
   CarouselItem,
@@ -35,7 +36,7 @@ const items = [
 ];
 
 const Example = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(props.id);
   const [animating, setAnimating] = useState(false);
 
   const next = () => {
@@ -60,7 +61,7 @@ const Example = (props) => {
       <CarouselItem
         className="custom-tag"
         tag="div"
-        key={item.id}
+        key={item.url}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >
