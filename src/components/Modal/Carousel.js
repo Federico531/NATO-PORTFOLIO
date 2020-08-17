@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import fotos1 from '../data/fotos1'
 import fotos2 from '../data/fotos2'
+
 import {
   Carousel,
   CarouselItem,
@@ -56,7 +57,7 @@ const Example = (props) => {
     setActiveIndex(newIndex);
   }
 
-  const slides = fotos1.map((item) => {
+  const slides = fotos2.map((item) => {
     return (
       <CarouselItem
         className="custom-tag"

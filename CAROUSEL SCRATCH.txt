@@ -1,3 +1,26 @@
+RELACIONAR LA BARRA LATERAL DE LA IZQUIERDA CON EL CAROUSEL PARA QUE ABRA EN LA PESTAÑA QUE CORRESPONDE
+
+PASO A PASO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+PASO A PASO:  (LA IDEA ES QUE SE DESPLIEGUE UNA FOTO ESPECIFICA EN UN PUESTO ESPECIFICO DEL CAROUSEL, Y RELACIONADA
+A OTRA FOTO ESPECIFICA)
+LISTO
+
+TENEMOS UN INDICE
+
+<portfolio image 1  url={fotos[index-1]}/ >
+
+HACER
+
+DAR INDEXOF.IMAGES[] VALOR PARA QUE LLEGUE HASTA LAS PROPS EN KEY DE CAROUSEL.JS
+
+
 TERMINAR DE INSTANCIAR BIEN KEYS EN CAROUSEL ---> investigar como se hace correctamente
 
 PENSAR BIEN ESTO -->>> MODAL Y CAROUSEL CONVIVEN EN PORTFOLIO IMAGE
@@ -12,29 +35,6 @@ QUE PENSAR COMO ESTABLECEMOS ESA COMUNICACION ENTRE DOS DOCUMENTOS DE DATA
 4-TAMBIEN QUIERO QUE AL TOCAR UNA FOTO DETERMINADA VAYA DIRECTO A ESE SLIDE 
 
 
-
--------------------------------------------------------------------------
----------------------------------------------------------------------------------
-
-TENEMOS UN INDICE
-
-<portfolio image 1  url={fotos[index-1]}/ >
-
-HACER
-
-DAR INDEXOF.IMAGES[] VALOR PARA QUE LLEGUE HASTA LAS PROPS EN KEY DE CAROUSEL.JS
-
-
-
-
-----------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-
-
-PASO A PASO:  (LA IDEA ES QUE SE DESPLIEGUE UNA FOTO ESPECIFICA EN UN PUESTO ESPECIFICO DEL CAROUSEL, Y RELACIONADA
-A OTRA FOTO ESPECIFICA)
-LISTO
 
 HECHO 
 4- CREAR ARRAY EN MODAL.JS CON CADA FOTO QUE SE ABRE EN EL MODAL EN EL ORDEN QUE SE DESPLEGARA
