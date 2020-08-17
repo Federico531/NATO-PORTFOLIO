@@ -65,7 +65,7 @@ const Example = (props) => {
         onExited={() => setAnimating(false)}
       >
               {/* <img src={props.foto} alt={item.altText}/> */}
-              <img src={props.foto} alt={item.altText} />
+              <img src={item.url} alt={item.altText} />
         <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
 
