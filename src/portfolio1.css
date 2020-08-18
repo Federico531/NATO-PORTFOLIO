@@ -298,5 +298,9 @@
 }
 
 body.modal{
-  overflow: hidden;
+  overflow: auto;
+}
+
+.modalito{
+
 }
