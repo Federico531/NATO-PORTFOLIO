@@ -42,13 +42,13 @@ const Example = (props) => {
 
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === fotos1.length - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === fotos2.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   }
 
   const previous = () => {
     if (animating) return;
-    const nextIndex = activeIndex === 0 ? fotos1.length - 1 : activeIndex - 1;
+    const nextIndex = activeIndex === 0 ? fotos2.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   }
 
@@ -92,7 +92,7 @@ const Example = (props) => {
         previous={previous}
       >
 
-        <CarouselIndicators items={fotos1} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        <CarouselIndicators items={fotos2} activeIndex={activeIndex} onClickHandler={goToIndex} />
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
