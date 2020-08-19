@@ -11,10 +11,11 @@ const ModalExample = (props) => {
     buttonLabel,
     className
   } = props;
+
+  //estos seran los proptypes?
   const [modal, setModal] = useState(false);
   const [backdrop, setBackdrop] = useState(true);
   const [keyboard, setKeyboard] = useState(true);
-
   const toggle = () => setModal(!modal);
 
   const changeBackdrop = e => {
@@ -39,11 +40,10 @@ const ModalExample = (props) => {
         </div>
       </div>
 
-      <Modal  style={{marginTop:'5%', minWidth:'90%'}}isOpen={modal} toggle={toggle} className='modalito' backdrop={backdrop} keyboard={keyboard}>
+      <Modal style={{marginTop:'5%', minWidth:'90%'}}isOpen={modal} toggle={toggle} className='modalito' backdrop={backdrop} keyboard={keyboard}>
         <ModalBody style={{padding:'0'}}>
           {props.children}
         </ModalBody>
-
       </Modal>
     </div>
   );

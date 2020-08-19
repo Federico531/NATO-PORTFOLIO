@@ -301,6 +301,32 @@ body.modal{
   overflow: auto;
 }
 
-.modalito{
 
+
+/* DE ACA PARA ABAJO CONTROLO EL CAROUSEL, RECORDAR SETTINGS */
+
+.carousel .item {
+  height: 300px;
+}
+
+.carousel{
+  height: 60px;
+}
+
+.custom-tag{
+height: auto;
+}
+
+.imagina{
+  object-position: 10% 10%;
+  height: auto
+}
+
+/* INTERIOR DE LA FOTO MODAL */
+.carousel-inner{
+  height: 160em
+}
+
+.slide{
+  
 }
