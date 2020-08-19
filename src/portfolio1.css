@@ -327,6 +327,15 @@ height: auto;
   height: 160em
 }
 
-.slide{
-  
+/* FLECHA DERECHA, SI LA PONGO MUY FUERA SE ESCONDE */
+.carousel-control-next-icon{
+  margin-right: -15em;
+}
+
+.carousel-control-prev{
+  margin-left: -8em;
+}
+
+.carousel-indicators {
+  display: none
 }
