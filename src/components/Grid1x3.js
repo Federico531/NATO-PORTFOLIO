@@ -10,8 +10,8 @@ export default class Grid1x3 extends Component {
 
     const fotolist = fotos1.map(foto => {
       return (
-        <Portfolio1Image url={foto.url} id={foto.id}/>
-      
+        <Portfolio1Image url={foto.url} id={foto.id} />
+
       )
     })
 
@@ -20,7 +20,7 @@ export default class Grid1x3 extends Component {
 
         <img className="guarda" src="https://mir-cdn.behance.net/v1/assets//1501ab05bb225341f2990946d5a6b18f/456e4149-1905-414c-abd0-5cab930dc27a_rwc_1171x0x10988x1708x13333.jpg?h=bbe01f3739f8da695c460bc2c2b6b76c" alt="profile" />
 
-        <Sidebar name="NATALIA MUÑIZ" url1="/Portfolio" url1Tag="WORK">
+        <Sidebar name="NATALIA MUÑIZ" url1="/" url1Tag="WORK">
           <div>
             <a className="urlsidebar2" href="/hola">Afiches - Expresionismo</a> <br />
             <a className="urlsidebar2" href="/hola">Serigrafia II</a> <br />

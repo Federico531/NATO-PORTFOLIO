@@ -33,7 +33,7 @@ const Example = (props) => {
 
   const slides = fotos2.map((item) => {
     return (
-      <CarouselItem style={{minHeight: '20em'}}
+      <CarouselItem data-keyboard="false" data-pause="hover"style={{minHeight: '20em'}}
         className="custom-tag"
         tag="div"
         key={item.url}
@@ -41,7 +41,7 @@ const Example = (props) => {
         onExited={() => setAnimating(false)}
       >
               {/* <img src={props.foto} alt={item.altText}/> */}
-              <img className="imagina"src={item.url} alt={item.altText} />
+              <img className="imagenCarousel"src={item.url} alt={item.altText} />
         <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
 

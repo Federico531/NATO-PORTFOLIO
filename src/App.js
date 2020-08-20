@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 //Nos permite crear URL en nuestra app y con route especificamo esas rutas
 
 //Routes
-import Index from './routes/Index'
 import Portfolio from './routes/Portfolio'
 import Portfolio1 from './routes/Portfolio1'
 
@@ -16,8 +15,7 @@ class App extends Component {
     render() {
         return (
             <Router >
-                <Route path="/" exact component={Index} />
-                <Route path="/portfolio" exact component={Portfolio} />
+                <Route path="/" exact component={Portfolio} />
                 <Route path="/portfolio1" exact component={Portfolio1} />
             </Router>
         );

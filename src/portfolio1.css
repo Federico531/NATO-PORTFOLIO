@@ -317,14 +317,15 @@ body.modal{
 height: auto;
 }
 
-.imagina{
+.imagenCarousel{
   object-position: 10% 10%;
   height: auto
 }
 
 /* INTERIOR DE LA FOTO MODAL */
 .carousel-inner{
-  height: 160em
+  height: 160em;
+  margin: 0;
 }
 
 /* FLECHA DERECHA, SI LA PONGO MUY FUERA SE ESCONDE */
