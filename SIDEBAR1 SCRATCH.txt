@@ -1,0 +1,21 @@
+Quiero que las etiquetas en el sidebar abran una foto en un lugar determinado del carousel
+
+
+
+
+HACER
+-como hago para que en sidebar2 se despliegue el texto y no la imagen vacia? 
+-AGREGAR EN fotos1 propiedad "tag, con el texto de la etiqueta"
+
+
+
+
+
+HECHO 
+
+Si pude usa una foto como boton para abrir el modal
+puedo usar una etiqueta 
+
+la tendria que poner dentro de portfolio1images? 
+
+1- crear un componente llamado "urlsidebar2"
