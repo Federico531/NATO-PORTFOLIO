@@ -32,9 +32,8 @@ const ModalExample = (props) => {
   return (
     <div>
       {/* ESTAS SON LAS IMAGENES DE LA RUTA 2*/}
-      <div id="imaginacion">
-      <img id={props.id} className='image' onClick={toggle} src={props.url} alt="whatever" />
-      </div>
+
+      <img id={"imgposition" + props.ide} className='image' onClick={toggle} src={props.url} alt="whatever" />
       <div className="middle">
         <div className="text">hola  {/*EL CHILDREN PUEDE SER UNA PROPIEDAD EN PORTFOLIO 1 Y GRID 1X3 */}
           {/* {props.img_text} */}
