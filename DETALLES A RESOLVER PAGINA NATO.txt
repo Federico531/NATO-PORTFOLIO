@@ -1,7 +1,7 @@
 grid 1x3 --> porfolio1images --> Modal --> Portfolio1 --> imgposition0 1 2 3 4 5
 
 Detalles a resolver: 
-
+faltan arreglar los overflow, retocar diseños, backtotop modal y agregar diseños correspondientes
 
 DISEÑO 
 
@@ -22,6 +22,9 @@ harajuku (en una sola imagen junta)
 
 
 PROGRAMACION 
+AUTOMATIC SCROLL TO TOP 
+RUTA 1 MODAL -> CAROUSEL
 
-RUTA 1 GALERIA
-Agregar en fotos1 una propiedad que se llame middletext y tenga la descripcion que aparece en el hover de cada imagen
+https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
+
+tendria que usar component did mount windows.scrollto(0,0)

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import fotos2 from '../data/fotos2'
 
 import {
@@ -31,6 +31,8 @@ const Example = (props) => {
   }
 
   const slides = fotos2.map((item) => {
+    
+ 
     return (
       <CarouselItem data-pause="hover" style={{ minHeight: '20em' }}
         className="custom-tag"
