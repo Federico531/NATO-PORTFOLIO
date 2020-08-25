@@ -11,18 +11,18 @@ export default [
     },
     {
         id: 2,
+        url: "https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/78203b70-caf8-47fd-a338-67e7739dfbec_rw_1200.jpg?h=f7b058c482fd0ee20a1af87a397f992b",
+        tag: "Expresionismo Pop"
+    },
+    {
+        id: 3,
         url: "https://pro2-bar-s3-cdn-cf.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/128e337d-3a2c-4cd1-b639-1a37918a4a11_rw_1920.jpg?h=84f010fd62ccb7e88d911010a6b7948f",
         tag: "Diseño Editorial - Revista"
     },
     {
-        id: 3,
+        id: 4,
         url: "https://pro2-bar-s3-cdn-cf.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/b23930fb-c864-4878-97af-6a58eeff36c8_rw_1920.jpg?h=7ae8ea52b86554d6837cffeff7376c95",
         tag: "Diseño de flyers"
-    },
-    {
-        id: 4,
-        url: "https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/78203b70-caf8-47fd-a338-67e7739dfbec_rw_1200.jpg?h=f7b058c482fd0ee20a1af87a397f992b",
-        tag: "Expresionismo Pop"
     },
     {
         id: 5,

@@ -1,0 +1,18 @@
+grid 1x3 --> porfolio1images --> Modal --> Portfolio1 --> imgposition0 1 2 3 4 5
+
+Detalles a resolver: 
+
+imgposition 2 (si alargo la imagen la proporcion corta el costado)  (Etiquetas watashi)
+
+
+faltan imagenes galeria
+
+conseguir imagen ayanami y homero
+
+faltan imagenes internas
+
+etiqueta watashi
+gorilaz
+Museo de Arte Moderno (en una sola imagen junta)
+harajuku (en una sola imagen junta) 
+
