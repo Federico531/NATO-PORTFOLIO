@@ -2,32 +2,39 @@ export default [
     {
         id: 0,
         url: "https://pro2-bar-s3-cdn-cf2.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/31a78818-ad19-4097-bb06-bc354ef26cf2_rw_1920.jpg?h=fc61aa3d02836cd5688b97e4c6bed830",
-        tag: "Afiches - Expresionismo"
+        tag: "Afiches - Expresionismo",
+        text:"Expresionismo"
     },
     {
         id: 1,
         url: "https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/04ca4e50-7e71-431a-8141-055aea56bdaf_rw_1200.jpg?h=fcb2fcc708f7e7fb646125696060db86",
-        tag: "Serigrafia II"
+        tag: "Serigrafia II",
+        text:"Serigrafia II"
     },
     {
         id: 2,
         url: "https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/78203b70-caf8-47fd-a338-67e7739dfbec_rw_1200.jpg?h=f7b058c482fd0ee20a1af87a397f992b",
-        tag: "Expresionismo Pop"
+        tag: "Expresionismo Pop",
+        text:"Expresionismo Pop"
     },
     {
         id: 3,
         url: "https://pro2-bar-s3-cdn-cf.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/128e337d-3a2c-4cd1-b639-1a37918a4a11_rw_1920.jpg?h=84f010fd62ccb7e88d911010a6b7948f",
-        tag: "Diseño Editorial - Revista"
+        tag: "Diseño Editorial - Revista",
+        text: "Diseño Editorial"
     },
     {
         id: 4,
         url: "https://pro2-bar-s3-cdn-cf.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/b23930fb-c864-4878-97af-6a58eeff36c8_rw_1920.jpg?h=7ae8ea52b86554d6837cffeff7376c95",
-        tag: "Diseño de flyers"
+        tag: "Diseño de flyers",
+        text: "Flyers"
+
     },
     {
         id: 5,
         url: "https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/af5611f0-1bc7-4932-a392-f6e97358c272_rw_1920.jpg?h=9f9c52b429985d26e9376cd31f7d6b08",
-        tag: "Diseño de logo y Aplicaciones"
+        tag: "Diseño de logo y Aplicaciones",
+        text: "Diseño de logo"
     },
     {
         id: 6,

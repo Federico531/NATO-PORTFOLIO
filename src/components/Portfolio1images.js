@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Modalexample from './Modal/Modal'
+import Modal from './Modal/Modal'
 import Carousel from './Modal/Carousel'
 
 //PARA PONER CADA MODAL EN UN CAROUSEL
@@ -9,10 +9,10 @@ export default class Portfolio1Image extends Component {
     render() {
         return (
             <div className="contenedor">
-                <Modalexample  url={this.props.url} ide={this.props.id}>
+                <Modal  url={this.props.url} ide={this.props.id} text={this.props.text}>
                     <Carousel foto={this.props.url} id={this.props.id} > 
                     </Carousel>
-                </Modalexample>
+                </Modal>
             </div>
         )
     }
