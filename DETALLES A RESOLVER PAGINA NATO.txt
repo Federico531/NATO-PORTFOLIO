@@ -2,12 +2,15 @@ grid 1x3 --> porfolio1images --> Modal --> Portfolio1 --> imgposition0 1 2 3 4 5
 
 Detalles a resolver: 
 
+
+DISEÑO 
+
 imgposition 2 (si alargo la imagen la proporcion corta el costado)  (Etiquetas watashi)
 
 
 faltan imagenes galeria
-
-conseguir imagen ayanami y homero
+ ayanami 
+ homero (ya tenemos imagen interna)
 
 faltan imagenes internas
 
@@ -16,3 +19,9 @@ gorilaz
 Museo de Arte Moderno (en una sola imagen junta)
 harajuku (en una sola imagen junta) 
 
+
+
+PROGRAMACION 
+
+RUTA 1 GALERIA
+Agregar en fotos1 una propiedad que se llame middletext y tenga la descripcion que aparece en el hover de cada imagen
