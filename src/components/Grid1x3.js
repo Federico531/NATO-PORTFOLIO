@@ -3,6 +3,7 @@ import fotos1 from './data/fotos1'
 import Portfolio1Image from './Portfolio1images'
 import Sidebar from './Sidebar2'
 import Urlsidebar2 from './Urlsidebar2'
+import ScrollTop from './ScrollTop'
 
 //No gutters sirve para que las mitades se unan perfectamente en la mitad sin margen
 export default class Grid1x3 extends Component {
@@ -39,7 +40,7 @@ export default class Grid1x3 extends Component {
         <div className="gallery1">
           {fotolist}
         </div>
-
+     <ScrollTop/>
       </div>
 
     )

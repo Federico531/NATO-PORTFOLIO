@@ -5,8 +5,8 @@ import Grid1x3 from '../components/Grid1x3'
 export default class Portfolio extends Component {
     render() {
         return (
-            <div className="hola">
-                <Grid1x3 className="hola"/>
+            <div >
+                <Grid1x3 />
             </div>
         );
     }

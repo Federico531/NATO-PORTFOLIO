@@ -61,7 +61,7 @@ export default class Grid1x2x2 extends Component {
 
     return (
 
-      <div className="fondogris">
+      <div className="flowhidden">
 
         <Sidebar
           name="NATALIA MUÑIZ"

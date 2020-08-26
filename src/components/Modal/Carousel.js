@@ -1,5 +1,6 @@
 import React, { useState, Component } from 'react';
 import fotos2 from '../data/fotos2'
+import ScrollTop from '../ScrollTop'
 
 import {
   Carousel,
@@ -43,7 +44,9 @@ const Example = (props) => {
       >
         {/* <img src={props.foto} alt={item.altText}/> */}
         <img className="imagenCarousel" src={item.url} alt={item.altText} />
+      
         <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
+       
       </CarouselItem>
 
 

@@ -1,7 +1,5 @@
 /* CAMBIAR EL NOMBRE DE ESTE ARCHIVO A app.css */
-.flowhidden{
-    overflow: hidden;
-}
+
 
 .leftside,.rightside {
     /* para hacer que se parta a la mitad y se despliegue el diseño ponemos vh en 50 y hacemos media query */
