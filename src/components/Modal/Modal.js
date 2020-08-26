@@ -29,6 +29,7 @@ const ModalExample = (props) => {
       <Modal style={{ marginTop: '5%', minWidth: '90%' }} isOpen={modal} toggle={toggle} className='modalito' backdrop={backdrop} keyboard={keyboard}>
         <ModalBody style={{ padding: '0' }}>
           {props.children}
+
         </ModalBody>
       </Modal>
     </div>

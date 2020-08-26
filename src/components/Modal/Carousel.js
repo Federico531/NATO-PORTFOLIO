@@ -1,6 +1,6 @@
 import React, { useState, Component } from 'react';
 import fotos2 from '../data/fotos2'
-import ScrollTop from '../ScrollTop'
+import $ from 'jquery'
 
 import {
   Carousel,
@@ -14,9 +14,13 @@ const Example = (props) => {
   const [activeIndex, setActiveIndex] = useState(props.id);
   const [animating, setAnimating] = useState(false);
 
+  const scrollTop = () =>{
+    window.scrollTo(0);
+ };
+
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === fotos2.length - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === fotos2.length - 1 ? 0 : activeIndex + 1 || scrollTop();
     setActiveIndex(nextIndex);
   }
 
@@ -24,6 +28,7 @@ const Example = (props) => {
     if (animating) return;
     const nextIndex = activeIndex === 0 ? fotos2.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
+    window.scrollTo(0,0);
   }
 
   const goToIndex = (newIndex) => {
@@ -44,9 +49,9 @@ const Example = (props) => {
       >
         {/* <img src={props.foto} alt={item.altText}/> */}
         <img className="imagenCarousel" src={item.url} alt={item.altText} />
-      
+
         <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
-       
+  
       </CarouselItem>
 
 
@@ -55,15 +60,6 @@ const Example = (props) => {
 
   return (
     <div>
-      <style>
-        {
-          `.custom-tag {
-              max-width: 100%;
-              height: 500px;
-              background: black;
-            }`
-        }
-      </style>
 
       {/* interval={false} para el slider */}
       <Carousel

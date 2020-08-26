@@ -23,8 +23,7 @@ harajuku (en una sola imagen junta)
 
 PROGRAMACION 
 AUTOMATIC SCROLL TO TOP 
+(ESTO ES EXACTAMENTE LO QUE NECESITO HACER PERO EN REACT)
+https://stackoverflow.com/questions/61246329/bootstrap-carousel-scroll-top-when-slide 
 RUTA 1 MODAL -> CAROUSEL
 
-https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
-
-tendria que usar component did mount windows.scrollto(0,0)
