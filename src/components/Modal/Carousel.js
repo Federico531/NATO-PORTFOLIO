@@ -1,6 +1,5 @@
-import React, { useState, Component } from 'react';
+import React, { useState} from 'react';
 import fotos2 from '../data/fotos2'
-import $ from 'jquery'
 
 import {
   Carousel,
@@ -14,13 +13,10 @@ const Example = (props) => {
   const [activeIndex, setActiveIndex] = useState(props.id);
   const [animating, setAnimating] = useState(false);
 
-  const scrollTop = () =>{
-    window.scrollTo(0);
- };
 
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === fotos2.length - 1 ? 0 : activeIndex + 1 || scrollTop();
+    const nextIndex = activeIndex === fotos2.length - 1 ? 0 : activeIndex + 1; 
     setActiveIndex(nextIndex);
   }
 
@@ -28,7 +24,6 @@ const Example = (props) => {
     if (animating) return;
     const nextIndex = activeIndex === 0 ? fotos2.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
-    window.scrollTo(0,0);
   }
 
   const goToIndex = (newIndex) => {
@@ -37,8 +32,8 @@ const Example = (props) => {
   }
 
   const slides = fotos2.map((item) => {
-    
- 
+
+
     return (
       <CarouselItem data-pause="hover" style={{ minHeight: '20em' }}
         className="custom-tag"
@@ -51,7 +46,7 @@ const Example = (props) => {
         <img className="imagenCarousel" src={item.url} alt={item.altText} />
 
         <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
-  
+
       </CarouselItem>
 
 
