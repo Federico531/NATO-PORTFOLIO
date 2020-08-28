@@ -1,19 +1,71 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router} from 'react-router-dom'
+import React, { useState } from 'react'
 
-//Components
+// https://www.youtube.com/watch?v=O6P86uwfdR0  14:50
 
 
-//IMPORTAR LOS COMPONENTES UTILIZADOS ACA
-export default class Index extends Component {
-    render() {
-        return (
-            /*No utilice las rutas con router pero quedo preparado para usarse */
-            <Router>
-                  
-                    <h1>DALE CHE</h1>
-                
-            </Router>
-        );
-    }
+
+//Hooks can be used only in function components. not class components
+//cannot put inside of functions, loops, if statements
+//THEY HAVE TO BE AT THE TOP LEVEL OF THE FUNCTION
+
+function countInitial() {
+    console.log('run function')
+    return 4
 }
+
+function App() {
+
+    // const arr = useState(4) 
+    //use state throws back array of values 
+    //it returns an array with 2 values (current state & function that allow to update that current state)
+
+    // const [count, setCount] = useState(countInitial) // this way it renders everytime we update state
+    const [state, setState] = useState({ cuenta: 4, theme: "blue" }) //en vez de tener un solo state hook podemos tener varios en un objeto
+    
+    //PODEMOS TENER HOOKS POR SEPARADO Y ES CONVENIENTE PARA QUE HAGA MERGE COMODAMENTE SIN SOBREESCRIBIRSE
+/*
+    const [count, setCount] = useState(4)
+    const [theme, setTheme] = useState('blue')
+  */  
+    ////////////////////////////////////////////////
+    
+    const cuenta = state.cuenta
+    const theme = state.theme
+
+    const [count, setCount] = useState(() => {
+        console.log('run function')
+        return 4;
+    }) // this way it renders only once
+
+
+    /* function decrementCount() {
+         setCount(count - 1)
+     } */ //   --> this would be incorrect because we are editing the original value  and not the element we receive
+
+   /* function decrementCount() {
+        setState(previousCount => {
+            return{ cuenta: previousCount.cuenta - 1 }  //esto sobreescribe todo el objeto, por tanto borra propiedad theme
+        })
+    } */ 
+
+    //Si no quiero que sobreescriba, hago spread de previousCount y sobreescribo solo el objeto que requiero
+    function decrementCount() {
+        setState(previousCount => {
+            return{ ...previousCount, cuenta: previousCount.cuenta - 1 }  
+        })
+    }
+    function incrementCount() {
+        setState(previousCount => previousCount + 1)
+    }
+
+    return (
+        <div>
+            <button onClick={decrementCount}>-</button>
+            <span>{cuenta}</span>
+            <span>{theme}</span>
+            <button onClick={incrementCount}>+</button>
+        </div>
+    );
+}
+
+export default App;

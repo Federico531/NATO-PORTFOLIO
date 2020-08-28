@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import fotos2 from '../data/fotos2'
 
 import {
@@ -8,15 +8,18 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-
-const Example = (props) => {
+//HASTA AQUI
+function Carouselo(props) {
   const [activeIndex, setActiveIndex] = useState(props.id);
   const [animating, setAnimating] = useState(false);
+
+  //opcion 1 hace que la ventana principal haga scroll
+  useEffect(()=>{window.scrollTo(0,0)},[activeIndex])
 
 
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === fotos2.length - 1 ? 0 : activeIndex + 1; 
+    const nextIndex = activeIndex === fotos2.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   }
 
@@ -39,8 +42,9 @@ const Example = (props) => {
         className="custom-tag"
         tag="div"
         key={item.url}
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
+        onExiting={() => { setAnimating(true); }}
+        onExited={() => {setAnimating(false);}}
+
       >
         {/* <img src={props.foto} alt={item.altText}/> */}
         <img className="imagenCarousel" src={item.url} alt={item.altText} />
@@ -73,4 +77,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default Carouselo;

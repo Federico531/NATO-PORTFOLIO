@@ -371,10 +371,15 @@ height: auto;
 /* FLECHA DERECHA, SI LA PONGO MUY FUERA SE ESCONDE */
 .carousel-control-next-icon{
   margin-right: -15em;
+  top: 20em;
+  position: fixed;
 }
 
 .carousel-control-prev{
-  margin-left: -8em;
+  margin-left: -3.9em;
+  top: 0em;
+  position: fixed;
+
 }
 
 .carousel-indicators {
