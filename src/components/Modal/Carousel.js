@@ -14,7 +14,7 @@ function Carouselo(props) {
   const [animating, setAnimating] = useState(false);
 
   //opcion 1 hace que la ventana principal haga scroll
-  useEffect(()=>{window.scrollTo(0,0)},[activeIndex])
+  // useEffect(()=>{window.scrollTo(0,0)},[activeIndex])
 
 
   const next = () => {
