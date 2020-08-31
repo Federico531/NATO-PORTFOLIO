@@ -1,7 +1,7 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
 
 import React, { useState } from 'react';
-import { Modal, ModalBody } from 'reactstrap';
+import { Button, Modal, ModalBody } from 'reactstrap';
 
 
 const ModalExample = (props) => {
@@ -29,7 +29,7 @@ const ModalExample = (props) => {
       <Modal style={{ marginTop: '5%', minWidth: '90%' }} isOpen={modal} toggle={toggle} className='modalito' backdrop={backdrop} keyboard={keyboard}>
         <ModalBody style={{ padding: '0' }}>
           {props.children}
-
+          <Button color="secondary" style={{position: "fixed", marginLeft: '77em', marginTop: '-8em' }}onClick={toggle}>X</Button>
         </ModalBody>
       </Modal>
     </div>

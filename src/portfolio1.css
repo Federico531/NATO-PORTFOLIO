@@ -137,7 +137,7 @@
 }
 
 .subtitle1:hover{
-
+  
 }
 
 .subtitle2 {
@@ -376,12 +376,15 @@ height: auto;
   margin-right: -15em;
   top: 20em;
   position: fixed;
+  display: none;
+
 }
 
 .carousel-control-prev{
   margin-left: -3.9em;
   top: 0em;
   position: fixed;
+  display: none;
 
 }
 
