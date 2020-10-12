@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PortfolioImage from './Portfolio-images'
 import Sidebar from './Sidebar1'
+import fotolist from './data/automaticImages'
 
 
 
@@ -9,16 +10,6 @@ const isOdd = require('is-odd')
 //No gutters sirve para que las mitades se unan perfectamente en la mitad sin sangria en el medio
 export default class Grid1x2x2 extends Component {
   render() {
-
-    // Loop para crear todos los elementos de la grilla
-    //Podria guardar todos los links dentro de un array, pero tal vez tendria menos control sobre los componentes
-    var rows = [];
-    for (var i = 1; i <= 18; i++) {
-      //El children podria llevar "key"
-      rows.push(<img src='https://pro2-bar-s3-cdn-cf6.myportfolio.com/d808e60d-8745-44ff-9a04-0f8acfd145ff/78203b70-caf8-47fd-a338-67e7739dfbec_rw_600.jpg?h=c3467b4db2fa6ea87f1cae73cd7ff8ed' alt={i} id={i} />);
-    }
-
-    /* usar {rows} */
 
     // >>> CAMBIA IMAGENES AUTOMATICAMENTE <<<< 
     //PODRIA TAMBIER USAR EL MAP DE FOTOS 1 PARA NO REPETIR 

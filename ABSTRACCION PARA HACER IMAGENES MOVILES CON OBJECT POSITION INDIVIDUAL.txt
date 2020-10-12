@@ -1,0 +1,11 @@
+pensar abstraccion paso a paso
+
+1-importamos import fotolist from './data/automaticImages'
+
+
+queremos traer una imagen por turno intercaladamente desde un archivo de data img1 img2 
+pero actualmente estamos trayendo las imagenes de un array y haciendo render tan solo igualando el get element by id con el lugar del array
+o sea que deberia suplantar ese lugar en el array por un puesto con id dentro de ese archivo data?
+
+CUIDADO, el fin de esto es poder asignar un estilo object position individualmente a cada imagen cambiante
+Tal vez para esto tendriamos que estar diciendo que if(isodd){ <imagencambiante id={el que corresponda al map}> (el id que corresponde al map no cambiara las dos imagenes?)
