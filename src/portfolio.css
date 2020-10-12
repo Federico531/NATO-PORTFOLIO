@@ -1,0 +1,24 @@
+/* 8X8 Grid */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 40% 40%;
+  grid-template-rows: repeat(2, 110vh);  /*HACER COMO EN LA PAGINA DE INICIO ASI SE REUBICA LA IMAGEN ABAJO Y LA BARRA PODRIA OCULTARSE???*/
+  /* AJUSTAR ALTO Y ANCHO RUTA 1*/
+  text-align: center;
+  margin-left: 27.5%;
+  /*esto no seria el container general?*/
+  display: grid;
+  /* min-width: 86.7%; */
+  width: 86.7%;
+  /*DE ACA PARA ABAJO ES LA CONFIGURACION ESPECIFICA DE LA GRILLA*/
+}
+
+img {   /* ESTE IMG REPRESENTA A TODAS LAS IMG DEL PROYECTO, HABRIA QUE SEPARARLAS PARA QUE NO SE AFECTEN ENTRE SI*/ 
+  object-fit: cover;
+  height: 100%; 
+  width: 100%;
+  display: grid;
+  /* background: url(./images/Photos/expresionismo.jpg); */
+}

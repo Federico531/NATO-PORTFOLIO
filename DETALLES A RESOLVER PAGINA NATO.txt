@@ -1,0 +1,29 @@
+grid 1x3 --> porfolio1images --> Modal --> Portfolio1 --> imgposition0 1 2 3 4 5
+
+Detalles a resolver: 
+faltan arreglar los overflow, retocar diseños, backtotop modal y agregar diseños correspondientes
+
+DISEÑO 
+
+imgposition 2 (si alargo la imagen la proporcion corta el costado)  (Etiquetas watashi)
+
+
+faltan imagenes galeria
+ ayanami 
+ homero (ya tenemos imagen interna)
+
+faltan imagenes internas
+
+etiqueta watashi
+gorilaz
+Museo de Arte Moderno (en una sola imagen junta)
+harajuku (en una sola imagen junta) 
+
+
+
+PROGRAMACION 
+AUTOMATIC SCROLL TO TOP 
+(ESTO ES EXACTAMENTE LO QUE NECESITO HACER PERO EN REACT)
+https://stackoverflow.com/questions/61246329/bootstrap-carousel-scroll-top-when-slide 
+RUTA 1 MODAL -> CAROUSEL
+

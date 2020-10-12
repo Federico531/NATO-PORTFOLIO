@@ -1,0 +1,450 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+  .sidebar1 {
+    display: none
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 100%;
+    /* AJUSTAR ALTO Y ANCHO RUTA 1*/
+    /*esto no seria el container general?*/
+    display: grid;
+    /* min-width: 86.7%; */
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*DE ACA PARA ABAJO ES LA CONFIGURACION ESPECIFICA DE LA GRILLA*/
+  }
+  
+
+  .gallery1 {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    grid-template-rows: repeat(15, 12.7em);
+    grid-row-gap: 1.65%;
+    grid-column-gap: 5.3%;
+  }
+  .contenedor {
+    position: relative;
+    margin-top: 13em;
+    margin-left: -5em;
+    left: 3.2%;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* cambiar esto para cambiar responsiveness */
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+    width: 100%;
+    max-height: 15em;
+    border-radius: 5px;
+  }
+}
+
+
+@font-face {
+  src: url(fonts/FuturaPTBold.otf);
+  font-family: futura-pt;
+}
+
+@font-face {
+  src: url(fonts/MyriadPro-Regular.otf);
+  font-family: MyriadPro-Regular;
+}
+
+@font-face {
+  src: url(fonts/MyriadPro-Light.otf);
+  font-family: MyriadPro-light;
+}
+
+@font-face {
+  src: url(fonts/Proxima-nova.otf);
+  font-family: Proxima-nova;
+}
+
+/* .guarda {
+  background-size: 100% 7%;
+  background-repeat: no-repeat;
+ } */
+
+
+.guarda {
+  margin-top: -2%;
+  /* Si me queda un espacio arriba reajusto luego*/
+  position: absolute;
+  height: 33.5%;
+  object-position: 0em -449%;
+  /*Ahora responde bien*/
+}
+
+.fondogris {
+  background-color: #f6f8f9;
+  height: 210em
+}
+
+.gallery1 {
+  margin-left: 26.7%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 27% 27% 27%;
+  grid-template-rows: repeat(15, 12.7em);
+  text-align: center;
+  max-width: 83%;
+  grid-row-gap: 1.65%;
+  grid-column-gap: 5.3%;
+}
+
+.sidebar1 {
+  position: absolute;
+  text-align: center;
+  margin-left: 3%;
+  margin-top: 5.3%;
+  width: 21.37%;
+  /* height: 140%; */
+  height: 41em;
+  background: white;
+  box-shadow: 0.01em 0.01em 0.2em lightgray;
+}
+
+.sidebar2 {
+  position: absolute;
+  text-align: center;
+  margin-left: 3%;
+  margin-top: 5.3%;
+  width: 21.37%;
+  /* height: 140%; */
+  height: 55em;
+  background: white;
+  box-shadow: 0.01em 0.01em 0.2em lightgray;
+  /* box-shadow: 20px 20px 50px 10px pink; */
+}
+
+.logo{
+  margin: 2.5em;
+  width: 4em;
+  height: 3em;
+  
+}
+.fab2 {
+  text-align: center;
+  font-size: 110%;
+  margin: 3em 12px 0 5px;
+  padding: 10px;
+  color: black;
+  border-radius: 100px;
+  background-color: lightgray;
+}
+
+.fab2:hover {
+  background-color: gray;
+  transition: 0.3s;
+}
+
+.nametitle1 {
+  margin-top: -1em;
+  position: justify;
+  color: black;
+  font-family: futura-pt;
+  font-size: 2.2vw;
+  letter-spacing: -0.05em;
+}
+
+.nametitle1:hover {
+  text-decoration: none;
+}
+
+.nametitle2 {
+  padding-top: 8.2%;
+  position: center;
+  color: black;
+  font-family: futura-pt;
+  font-size: 1.7vw;
+  text-decoration: none;
+}
+
+.nametitle2:hover {
+  text-decoration: none;
+}
+
+.subtitle1 {
+  position: center;
+  color: gray;
+  font-family: MyriadPro-light;
+  /* font-size: 163%; */
+  font-size: 1.45vw;
+  letter-spacing: 0.17em;
+  text-decoration:none;
+
+}
+
+.subtitle1:hover{
+  
+}
+
+.subtitle2 {
+  padding-top: 4.4%;
+  position: center;
+  color: gray;
+  font-family: futura-pt;
+  /* font-size: 163%; */
+  font-size: 1.3vw;
+  letter-spacing: -0.01em;
+}
+
+.url1-1 {
+  padding: 100px 165px 0 0px; /*Cambiar a margin y reajustar */
+  position: center;
+  color: black;
+  font-family: MyriadPro-regular, underline;
+  /* font-size: 163%; */
+  font-size: 1.30vw;
+  letter-spacing: 0.02em;
+}
+
+.url1-1:hover {
+  text-decoration: underline;
+}
+
+.url1-2 {
+  padding: 2px 165px 0 0px;
+  position: center;
+  color: black;
+  font-family: MyriadPro-Regular, underline;
+  /* font-size: 163%; */
+  font-size: 1.30vw;
+  letter-spacing: 0.02em;
+}
+
+.url1-2:hover {
+  text-decoration: underline;
+}
+
+.urlsidebar2{
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin-top: 5.5%;
+  line-height: 188%;
+  font-size: 0.95em;
+}
+
+.urlsidebar2:hover {
+  color: black;
+  text-decoration: none;
+  cursor: auto;
+}
+
+.urlsidebar2:hover #imaginacion {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+.contenedor {
+  position: relative;
+  margin-top: 82%;
+  left: 3.2%;
+  width: 113.9%;
+  height: 117%;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  object-fit: cover;
+  width: 100%;
+  max-height: 15em;
+  border-radius: 5px;
+}
+
+
+#imgposition0 {
+  object-position: 0% 32%;
+}
+#imgposition1 {
+  object-position: 0% 35%;
+  min-height: 15em;
+}
+#imgposition2 {
+  min-height: 15em;
+  object-position: 10% 50%;
+}
+#imgposition3 {
+  object-position: 0% 0%;
+  min-height: 15em;
+}
+#imgposition4 {
+  min-height: 15.1em;
+  object-position: 40% 50%;
+}
+#imgposition5 {
+  object-position: 35% 30%;
+}
+#imgposition6 {
+  object-position: 0% 42%;
+}
+#imgposition7 {
+  object-position: 0% 42%;
+}
+#imgposition8 {
+  object-position: 0% 72%;
+}
+#imgposition9 {
+  object-position: 0% 40%;
+}
+#imgposition10 {
+  object-position: 0% 65%;
+}
+#imgposition11 {
+  object-position: 45% 30%;
+  min-height: 15.1em;
+}
+#imgposition12 {
+  object-position: 0% 13%;
+}
+#imgposition13 {
+  object-position: 0% 12%;
+}
+#imgposition14 {
+  object-position: 45% 30%;
+  min-height: 15.1em;
+}
+#imgposition15 {
+  object-position: 0% 49%;
+}
+#imgposition16 {
+  object-position: 50% 0%;
+  min-height: 15.1em;
+}
+
+.profilepic {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 11.5%;
+  width: 33%;
+  min-width: 75px;
+  min-height: 20px;
+  border-radius: 100%;
+  margin-left: 35%;
+  margin-top: 14%;
+}
+
+.middle {
+  transition: .1s ease;
+  opacity: 0;
+  background-image: linear-gradient(transparent, black);
+  width: 100%;
+  height: 27%;
+  position: absolute;
+  top: 87.6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* .contenedor:hover .image {
+  opacity: 0.3;
+} */
+
+.contenedor:hover .middle {
+  /* Si le bajo la opacidad al middle el texto se aclara*/
+  opacity: 1;
+}
+
+
+/* TEXTO HOVER IMAGENES PAGE 1*/
+
+.text {
+  /* background-color: #4CAF50; */
+  color: white;
+  opacity: 9;
+  text-align: left;
+  font-size: 1.33vw;
+  padding: 2% 4.4%;
+}
+
+body.modal{
+  overflow: auto;
+}
+
+
+
+/* DE ACA PARA ABAJO CONTROLO EL CAROUSEL, RECORDAR SETTINGS */
+
+/* .carousel .item {
+  height: 500px;
+} */
+
+.carousel{
+  height: 60px;
+}
+
+.custom-tag{
+height: auto;
+}
+
+.imagenCarousel{
+  object-position: 10% 10%;
+  height: auto
+}
+
+/* ALTURA DE LA FOTO DENTRO DEL CAROUSEL */
+.carousel-inner{
+  height: 255em;
+  margin: 0;
+}
+
+/* FLECHA DERECHA, SI LA PONGO MUY FUERA SE ESCONDE */
+.carousel-control-next-icon{
+  margin-right: -15em;
+  top: 20em;
+  position: fixed;
+  display: none;
+
+}
+
+.carousel-control-prev{
+  margin-left: -3.9em;
+  top: 0em;
+  position: fixed;
+  display: none;
+
+}
+
+.carousel-indicators {
+  display: none
+}
+
+body.modal-open{
+  overflow-y:hidden;
+  height:auto;
+}
+
